@@ -130,9 +130,6 @@ def main():
 
                 pygame.display.update()
 
-#def main() -> None:
- #   round(wilson)
-
 
 if __name__ == '__main__':
     main()
