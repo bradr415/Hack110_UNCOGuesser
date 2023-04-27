@@ -12,7 +12,7 @@ RED = (240, 20, 20)
 
 
 #bell_tower: Location = Location()
-old_well: Location = Location("ol_well (1).jpg", (1000, 500))
+old_well: Location = Location("ol_well (1).jpg", (1144, 146))
 wilson: Location = Location("wilson.jpg", (1144, 240))
 bell_tower: Location("bell_tower.jpg", (1000,500))
 # bell_tower: Location(bell tower jpg, coordinates)
@@ -109,7 +109,7 @@ def main():
                 quit()
             if event.type == pygame.MOUSEBUTTONDOWN:
                 pos = pygame.mouse.get_pos()
-                point_total = int(points(wilson, pos))
+                point_total = int(points(pic, pos))
 
                 RED = (240, 20, 20)
                 initialize_background(pic, point_total)
@@ -121,6 +121,7 @@ def main():
                 pygame.draw.rect(screen, LIGHT_BLUE, correct_place)
                 
                 print(points(wilson, pos))
+                print(pos)
                 #pygame.display.set_caption(f"Score: {point_total}") # Set up the display
                 #text_surface = font.render(f"Score: {point_total}", True, LIGHT_BLUE) # Create the text surface
                 
