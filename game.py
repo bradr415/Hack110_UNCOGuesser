@@ -80,3 +80,28 @@ def main():
 
 if __name__ == '__main__':
     main()
+
+#add score on bottom
+    import pygame
+
+pygame.init()
+
+# Set up the display
+box = pygame.display.set_mode((800, 200))
+pygame.display.set_caption(point_total)
+# Set up the font
+font = pygame.font.Font(None, 36)
+# Create the text surface
+text_surface = font.render(f"Score: {point_total}", True, LIGHT_BLUE)
+# Get the rectangle of the text surface
+text_rect = text_surface.get_rect()
+# Center the text on the screen
+text_rect.center = (0, 600)
+# Fill the screen with black color
+box.fill((0, 0, 0))
+# Draw the text surface onto the screen
+screen.blit(text_surface, text_rect)
+# Update the display
+pygame.display.update()
+
+pygame.draw.line()
