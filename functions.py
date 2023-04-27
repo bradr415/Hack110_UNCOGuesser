@@ -35,7 +35,7 @@ places: list[Location] = [old_well, wilson]
 
 
 def points(actual_location: Location, input_location) -> int:
-    length: int = (sqrt((actual_location.location_place[0] - input_location[0])**2)+ ((actual_location.location_place[1] - input_location[1])**2))
+    length: int = (sqrt(((actual_location.location_place[0] - input_location[0])**2)+ ((actual_location.location_place[1] - input_location[1])**2)))
     score = 100 - ((length ** (1/2.3)) / 2)
     if score < 0:
         score = 0
